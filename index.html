@@ -91,7 +91,69 @@
   </section>
   <!-----End Table Menu----->
 
- 
+  <!-----Button Rservation----->
+  <a id="reservation" class="reservation btn btn-transparent border-dark border-2" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+    Réservez votre Table
+  </a>
+
+  <div class="container">
+    <div class="collapse multi-collapse" id="collapse1">
+      <div class="card-container">
+        <div class="card-img">
+          <img class="card-img" src="images/resto/reservation.jpg" alt="1">
+        </div>
+        <div class = "card-content">
+          <h3>Réservation</h3>
+            <form>
+              <div class = "form-row">
+                <select name = "days">
+                  <option value = "day-select">Jour</option>
+                  <option value = "sunday">Dimanche</option>
+                  <option value = "monday">Lundi</option>
+                  <option value = "tuesday">Mardi</option>
+                  <option value = "wednesday">Mercredi</option>
+                  <option value = "thursday">Jeudi</option>
+                  <option value = "friday">Vendredi</option>
+                  <option value = "saturday">Samedi</option>
+                </select>
+
+                <select name = "hours">
+                  <option value = "hour-select">Houre</option>
+                  <option value = "10">10: 00</option>
+                  <option value = "10">12: 00</option>
+                  <option value = "10">14: 00</option>
+                  <option value = "10">16: 00</option>
+                  <option value = "10">18: 00</option>
+                  <option value = "10">20: 00</option>
+                  <option value = "10">22: 00</option>                  
+                </select>
+              </div>
+
+              <div class = "form-row">
+                <input type = "text" placeholder="Nom">
+                <input type = "text" placeholder="Téléphone">
+              </div>      
+
+              <div class = "form-row">
+                <input href="./index.html" type = "submit" value = "BOOK TABLE">
+              </div>      
+          </form>
+        </div>
+      </div>     
+    </div>
+  </div>
+
+  <div class="chef">
+    <div class="chef-img">
+        <img src="images/resto/chef.jpeg" class="img-fluid" alt="chef">
+    </div>
+    <div class="chef-info">
+        <h5>Le Chef</h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus pariatur alias quam natus, culpa repudiandae?</p>
+    </div>
+  </div>  
+  <!-----End Button Reservation----->
+
 
 
   <!-----Media Query----->
