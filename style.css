@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Josefin Slab', serif;
+}
+
+body {
+    max-width: 320px;
+    background-color: royalblue;
+}
+
+nav {
+    max-width: 320px;
+    display: flex;
+    background-color: red;
+}
