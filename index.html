@@ -31,6 +31,13 @@
         <li><a class="dropdown-item" href="#">Reservation<i class="icofont-pen"></i></a></li>
       </ul>
     </div>
+    <div class="menu-lg d-none">
+      <a href="#" class="link-item">Restaurant</a>
+      <a href="#" class="link-item">La Carte</a>
+      <a href="#" class="link-item">Reservation</a>
+      <a href="#" class="link-item">évenéments</a>
+    </div>
+    <div class="overlay-menu d-none"></div> 
     <h1><a href="index.html">Vista</a></h1>
   </nav>                
   <!-----End Menu----->
@@ -73,10 +80,10 @@
   <!-----Info----->
   <section class="box-info">
     <h3 class="d-block">Restaurant Vista</h3>
-    <a href="0765238544"><span><i class="bi bi-telephone-fill"></i></span> 0765238544</a>
-    <a href="restaurantvista@gmail.com"><span class="mail"><i class="bi bi-envelope-fill"></i></span>restaurantvista@gmail.com</a>
-    <a href="https://goo.gl/maps/9aRNd4JdLcBMud6w9" class="map"><span class="map"><i class="icofont-google-map"></i></span>Ayacucho 1916</a>
-    <a href="#" class="insta"><span class="insta"><i class="icofont-instagram"></i></span>RestaurantVista</a>
+    <a href="#"><i class="icon bi bi-telephone-fill"></i>0765238544</a>
+    <a href="#"><i class="icon bi bi-envelope-fill"></i>restaurantvista@gmail.com</a>
+    <a href="#"><i class="icon icofont-google-map"></i>Ayacucho 1916</a>
+    <a href="#"><i class="ico icofont-instagram"></i>RestaurantVista</a>
   </section>
   <!-----Info----->
 
@@ -91,51 +98,51 @@
   </section>
   <!-----End Table Menu----->
 
-  <!-----Button Rservation----->
-  <a id="reservation" class="reservation btn btn-transparent border-dark border-2" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+  <!-----Button Reservation----->
+  <a id="reservation" class="reservation btn" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
     Réservez votre Table
   </a>
 
   <div class="container">
-    <div class="collapse multi-collapse" id="collapse1">
+    <div class="collapse" id="collapse1">
       <div class="card-container">
         <div class="card-img">
-          <img class="card-img" src="images/resto/reservation.jpg" alt="1">
+          <img class="card-img" id="card-img" src="images/resto/reservation.jpg" alt="1">
         </div>
         <div class = "card-content">
           <h3>Réservation</h3>
             <form>
               <div class = "form-row">
-                <select name = "days">
+                <select name = "select">
                   <option value = "day-select">Jour</option>
-                  <option value = "sunday">Dimanche</option>
-                  <option value = "monday">Lundi</option>
-                  <option value = "tuesday">Mardi</option>
-                  <option value = "wednesday">Mercredi</option>
-                  <option value = "thursday">Jeudi</option>
-                  <option value = "friday">Vendredi</option>
-                  <option value = "saturday">Samedi</option>
+                  <option value = "sunday" id="option">Dimanche</option>
+                  <option value = "monday" id="option">Lundi</option>
+                  <option value = "tuesday" id="option">Mardi</option>
+                  <option value = "wednesday" id="option">Mercredi</option>
+                  <option value = "thursday" id="option">Jeudi</option>
+                  <option value = "friday" id="option">Vendredi</option>
+                  <option value = "saturday" id="option">Samedi</option>
                 </select>
 
-                <select name = "hours">
-                  <option value = "hour-select">Houre</option>
-                  <option value = "10">10: 00</option>
-                  <option value = "10">12: 00</option>
-                  <option value = "10">14: 00</option>
-                  <option value = "10">16: 00</option>
-                  <option value = "10">18: 00</option>
-                  <option value = "10">20: 00</option>
-                  <option value = "10">22: 00</option>                  
+                <select name = "select">
+                  <option value = "hour-select">Hour</option>
+                  <option value = "10" id="option">10: 00</option>
+                  <option value = "10" id="option">12: 00</option>
+                  <option value = "10" id="option">14: 00</option>
+                  <option value = "10" id="option">16: 00</option>
+                  <option value = "10" id="option">18: 00</option>
+                  <option value = "10" id="option">20: 00</option>
+                  <option value = "10" id="option">22: 00</option>                  
                 </select>
               </div>
 
               <div class = "form-row">
-                <input type = "text" placeholder="Nom">
+                <input type = "text" id="placeholder" placeholder="Nom">
                 <input type = "text" placeholder="Téléphone">
               </div>      
 
               <div class = "form-row">
-                <input href="./index.html" type = "submit" value = "BOOK TABLE">
+                <a class="btn" href="index.html" id="submit">Book Table</a>
               </div>      
           </form>
         </div>
@@ -145,7 +152,7 @@
 
   <div class="chef">
     <div class="chef-img">
-        <img src="images/resto/chef.jpeg" class="img-fluid" alt="chef">
+        <img src="images/chef.jpg" class="img-fluid" alt="chef">
     </div>
     <div class="chef-info">
         <h5>Le Chef</h5>
@@ -154,7 +161,31 @@
   </div>  
   <!-----End Button Reservation----->
 
+  <!-----Info Hour----->
+  <div class="container d-none">
+    <h3>Horaires</h3>
+    <p>Du mardi au samedi</p>
+    <p>Déjeuner de 12h à 14h</p>
+    <p>Dîner de 18h30 à 21h</p>
+  </div>
+  <!-----End Info Hour----->
 
+  <!-----Footer----->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-none">
+          <h6>Grill<i class="bi bi-circle-fill">Pâtes<i class="bi bi-circle-fill"></i>Fruits de Mer<i class="bi bi-circle-fill"></h6>
+        </div>
+        <div class="col-6" id="col-1">
+          <p><i class="icofont-google-map"></i>Ayacucho 1916<br><i class="bi bi-telephone-fill"></i>0765238544<br><i class="icofont-instagram"></i>VistaResto</p>
+        </div>
+        <div class="col-6" id="col-2">Vista</div>
+        <div class="col-12" id="col-3">Copyright 2021 Vista - Tous droits réservés</div>
+      </div>
+    </div>
+  </footer>
+  <!-----End Footer----->
 
   <!-----Media Query----->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

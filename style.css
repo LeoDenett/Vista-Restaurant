@@ -59,6 +59,9 @@ nav h1 a {
     right: 7rem;
     bottom: 0.3rem;
 }
+nav h1 a:hover {
+    color: white;
+}
 /*------End Nav Menu------*/
 
 /*------Start Slider-----*/
@@ -94,7 +97,7 @@ nav h1 a {
 }
 .box-info h3 {
     color: black;
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-top: 0.5rem;
     font-weight: 600;
 }
@@ -107,8 +110,13 @@ nav h1 a {
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
-.box-info a span i {
-    margin-right: 0.3rem;
+.icon{
+    margin-right: 0.2rem;
+}
+.ico{
+    margin-right: 0.2rem;
+    position: relative;
+    top: 0.2rem;
 }
 /*-----End Box-Info-----*/
 
@@ -121,7 +129,6 @@ section.table-vista {
     bottom: 2rem;
     border: 2px solid goldenrod;
 }
-
 section div.table-title {
     background-color: white;
     width: 80%;
@@ -151,3 +158,111 @@ section a:hover{
     color: black;
 }
 /*-----End Table Vista-----*/
+
+/*-----Button Reservation-----*/
+#reservation {
+    color: white;
+    background-color: black;
+    font-size: 1.5rem;
+    border: 2px solid goldenrod;
+    position: relative;
+    left: 2.5rem;
+}
+.container{
+    max-height: 15rem;
+    margin-bottom: 1rem;
+}
+#card-img {
+    height: 15rem;
+    margin-top: 0.5rem;
+}
+/*Formulaire de Reservation*/
+.card-content {
+    display: inline-block;
+    position: relative;
+    left: 0.8rem;
+    bottom: 14.2rem;
+    border: 2px solid goldenrod;
+    padding: 10px;
+}
+.card-content h3 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.form-row select {
+    color: white;
+    background-color: transparent;
+    padding: 8px 12px;
+    border: 2px solid goldenrod;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    font-size: 1.3rem;
+    width: 7.5rem;
+}
+#option {
+    color: black;
+    background-color: white;
+}
+.form-row input {
+    color: white;
+    border: 2px solid goldenrod;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 8px 12px;
+    width: 7.5rem;
+    margin-top: 0.5rem;
+    background-color: transparent;
+    font-size: 1.3rem;
+}
+::-webkit-input-placeholder {
+    color: white;
+  }
+#submit{
+    width: 100%;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    color: white;
+    font-weight: 700;
+    background-color: transparent;
+    border: 2px solid white;
+}
+#submit:hover{
+    background-color: white;
+    color: black;
+}
+/*Chef Info*/
+.chef-img{
+    width: 92.5%;
+    margin-left: 0.75rem;
+}
+.chef-info {
+    display: none;
+}
+/*-----End Button Reservation-----*/
+
+/*-----Footer-----*/
+footer {
+    margin-top: 0.5rem;
+    height: 9rem;
+    background: #000;
+    color: white;
+}
+.row{
+    text-align: left;
+    font-size: 0.8rem;
+}
+#col-1{
+    text-align: left;
+    margin-top: 1rem;
+}
+#col-2{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+#col-3{
+    margin-top: 1rem;
+}
+
