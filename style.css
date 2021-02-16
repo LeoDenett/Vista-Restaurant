@@ -87,7 +87,7 @@ nav h1 a:hover {
 /*-----Start Box-Info-----*/
 .box-info {
     width: 100%;
-    height: 12rem;
+    height: auto;
     position: relative;
     bottom: 4rem;
     background: goldenrod;
@@ -102,7 +102,7 @@ nav h1 a:hover {
     font-weight: 600;
 }
 .box-info a {
-    display: inline-flex;
+    display: inline-block;
     text-decoration: none;
     color: black;
     text-align: left;
@@ -116,7 +116,7 @@ nav h1 a:hover {
 .ico{
     margin-right: 0.2rem;
     position: relative;
-    top: 0.2rem;
+    bottom: 0.09rem;
 }
 /*-----End Box-Info-----*/
 
@@ -155,7 +155,8 @@ section a {
     bottom: 0.5rem;
 }
 section a:hover{
-    color: black;
+    color: white;
+    background: #000;
 }
 /*-----End Table Vista-----*/
 
@@ -234,7 +235,7 @@ section a:hover{
 /*Chef Info*/
 .chef-img{
     width: 92.5%;
-    margin-left: 0.75rem;
+    margin-left: 0.73rem;
 }
 .chef-info {
     display: none;
@@ -264,5 +265,310 @@ footer {
 }
 #col-3{
     margin-top: 1rem;
+}
+
+@media screen and (min-width: 375px) {
+    nav h1 a {
+        position: relative;
+        right: 8.5rem;
+        bottom: 0.3rem;
+    }
+    .box-info h3 {
+        margin-bottom: 1rem;
+        margin-left: 3.5rem;
+    }
+    section a {
+        font-size: 1.5rem;
+        position: relative;
+        left: 2.5rem;
+        bottom: 0.5rem;
+    }
+    #reservation {
+        position: relative;
+        left: 4rem;
+    }
+    .chef-img{
+        margin-left: 0.9rem;
+    }
+    .card-content {
+        width: 95%;
+        display: inline-block;
+        position: relative;
+        left: 0.6rem;
+        bottom: 14.3rem;
+    }
+    .form-row select {
+        padding: 8px 12px;
+        font-size: 1.3rem;
+        width: 9.5rem;
+    }
+    .form-row input {
+        width: 9.5rem;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .navbar {
+        height: 4rem;
+        border-top: 4px solid goldenrod;
+        border-bottom: 4px solid goldenrod;
+    }
+    nav h1 a {
+        position: relative;
+        right: 9rem;
+        bottom: 0.3rem;
+        font-size: 3.5rem;
+    }
+    nav .dropdown {
+        border: 4px solid goldenrod;
+    }
+    nav .dropdown i {
+        font-size: 2rem;
+    }
+    .dropdown-divider {
+        height: 4px;
+    }
+    nav li a {
+        font-size: 3rem;
+    }
+    nav .dropdown li i {
+        font-size: 3rem;
+    }
+    .carousel-item img {
+        height: 25rem;
+        width: 100%;
+    }
+    .carousel-caption h2 {
+        position: relative;
+        top: 2.7rem;
+        font-size: 2rem;
+    }
+    .box-info h3 {
+        margin-bottom: 1rem;
+        margin-left: 4.5rem;
+    }
+    .box-info a {
+        display: block;
+        width: 80%;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+    }
+    section a {
+        position: relative;
+        left: 3.5rem;
+    }
+    .container{
+        max-height: 18rem;
+        margin-bottom: 1rem;
+    }
+    #card-img {
+        height: 18rem;
+        margin-top: 0.5rem;
+    }
+    #reservation {
+        position: relative;
+        left: 2.5rem;
+        padding: 0.5rem 2rem;
+        font-size: 2rem;
+    }
+    .card-content h3 {
+        font-size: 2.5rem;
+    }
+    .chef-img{
+        width: 94%;
+        margin-left: 0.8rem;
+    }
+    .card-content {
+        width: 95%;
+        height: 16rem;
+        position: relative;
+        bottom: 17rem;
+    }
+    .form-row select {
+        width: 11rem;
+        font-size: 1.7rem;
+    }
+    .form-row input {
+        width: 11rem;
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        height: 5rem;
+        border-top: 5px solid goldenrod;
+        border-bottom: 5px solid goldenrod;
+    }
+    nav h1 a {
+        position: relative;
+        right: 19rem;
+        bottom: 0.5rem;
+        font-size: 4.5rem;
+    }
+    nav .dropdown {
+        border: 5px solid goldenrod;
+        position: relative;
+        top: 1rem;
+    }
+    nav .dropdown i {
+        font-size: 2.9rem;
+    }
+    nav .dropdown-menu{
+        border: 5px solid goldenrod;
+    } 
+    .dropdown-divider {
+        height: 5px;
+    }
+    nav li a {
+        font-size: 3.5rem;
+    }
+    .carousel-item img {
+        height: 28rem;
+    }
+    .carousel-caption h2 {
+        position: relative;
+        top: 2rem;
+        font-size: 3rem;
+    }
+    .overlay {
+        height: 6rem;
+        position: relative;
+        top: -6rem;
+    }
+    .box-info {
+        position: relative;
+        bottom: 6rem;
+        border: 5px solid white;
+        border-bottom: 5px solid black;
+        border-right: 5px solid black;
+    }
+    .box-info h3 {
+        font-size: 3rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        margin-left: 3.5rem;
+    }
+    .box-info a {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+    }
+    .icon{
+        font-size: 2rem;
+        position: relative;
+        right: 1rem;
+    }
+    .ico{
+        font-size: 2rem; 
+        position: relative;
+        right: 1rem; 
+    }
+    /*-----Start Table Vista-----*/
+    section.table-vista {
+        border: 5px solid black;
+        background-color: goldenrod;
+        height: 12rem;
+    }
+    section div.table-title {
+        background-color: white;
+        width: 80%;
+        height: 3rem;
+    }
+    .table-title h2 {
+        color: goldenrod;
+        height: 4rem;
+        position: relative;
+        bottom: 1rem;
+        font-size: 3.5rem;
+        border: 5px solid black;
+    }
+    section a {
+        font-size: 3rem;
+        position: relative;
+        left: 7rem;
+        bottom: 0.5rem;
+    }
+    .container{
+        max-height: 30rem;
+    }
+    #card-img {
+        height: 30rem;
+    }
+    #reservation {
+        position: relative;
+        left: 4rem;
+        padding: 1.5rem 7rem;
+        font-size: 3rem;
+        border: 5px solid goldenrod;
+    }
+    .card-content h3 {
+        font-size: 3.5rem;
+    }
+    .card-content {
+        width: 95%;
+        height: 28rem;
+        position: relative;
+        bottom: 29rem;
+        left: 1rem;
+    }
+    .form-row select {
+        width: 19.7rem;
+        font-size: 2.5rem;
+        border: 5px solid white;
+        border-top: 5px solid goldenrod;
+        border-left: 5px solid goldenrod;
+        margin-top: 1rem;
+    }
+    .form-row input {
+        width: 19.7rem;
+        font-size: 2.5rem;
+        border: 5px solid white;
+        border-top: 5px solid goldenrod;
+        border-left: 5px solid goldenrod;
+        margin-top: 2rem;
+    }
+    #submit{
+        font-size: 2.5rem;
+        color: white;
+        font-weight: 700;
+        border: 5px solid white;
+        border-top: 5px solid goldenrod;
+        border-left: 5px solid goldenrod;
+        margin-top: 4rem;
+    }
+    .chef-img img{
+        width: 96%;
+        height: 30rem;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+    }
+    footer {
+        margin-top: 2rem;
+        height: 17rem;
+    }
+    .row{
+        text-align: left;
+    }
+    #col-1 p{
+        text-align: left;
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    #col-1 i{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    #col-2{
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+    #col-3{
+        text-align: center;
+        font-size: 2rem;
+        position: relative;
+        top: 1rem;
+    }
 }
 
