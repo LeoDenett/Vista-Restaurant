@@ -62,6 +62,9 @@ nav h1 a {
 nav h1 a:hover {
     color: white;
 }
+#menu-lg, #overlay-menu{
+    display: none;
+}
 /*------End Nav Menu------*/
 
 /*------Start Slider-----*/
@@ -110,6 +113,10 @@ nav h1 a:hover {
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
+.box-info a:hover {
+    color: black;
+    background-color: transparent;
+}
 .icon{
     margin-right: 0.2rem;
 }
@@ -117,6 +124,9 @@ nav h1 a:hover {
     margin-right: 0.2rem;
     position: relative;
     bottom: 0.09rem;
+}
+#hour{
+    display: none;
 }
 /*-----End Box-Info-----*/
 
@@ -157,6 +167,9 @@ section a {
 section a:hover{
     color: white;
     background: #000;
+}
+section div.table-text{
+    display: none;
 }
 /*-----End Table Vista-----*/
 
@@ -242,6 +255,11 @@ section a:hover{
 }
 /*-----End Button Reservation-----*/
 
+/*-----hour-----*/
+#hour{
+    display: none;
+}
+
 /*-----Footer-----*/
 footer {
     margin-top: 0.5rem;
@@ -252,6 +270,9 @@ footer {
 .row{
     text-align: left;
     font-size: 0.8rem;
+}
+#footer-text{
+    display: none;
 }
 #col-1{
     text-align: left;
@@ -395,6 +416,7 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    /*-----Nav Menu-----*/
     .navbar {
         height: 5rem;
         border-top: 5px solid goldenrod;
@@ -436,6 +458,7 @@ footer {
         position: relative;
         top: -6rem;
     }
+    /*-----Box Info-----*/
     .box-info {
         position: relative;
         bottom: 6rem;
@@ -489,6 +512,7 @@ footer {
         left: 7rem;
         bottom: 0.5rem;
     }
+    /*Formulaire de Reservation*/
     .container{
         max-height: 30rem;
     }
@@ -543,6 +567,7 @@ footer {
         margin-left: 1.5rem;
         margin-top: 2rem;
     }
+    /*-----Footer-----*/
     footer {
         margin-top: 2rem;
         height: 17rem;
@@ -572,3 +597,262 @@ footer {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    /*-----Nav Menu-----*/
+    .navbar {
+        height: 6rem;
+    }
+    nav h1 a {
+        position: relative;
+        right: 53rem;
+        bottom: 0.1rem;
+        font-size: 3.5rem;
+    }
+    nav .dropdown{
+        visibility: hidden;
+    }
+    .carousel-item img {
+        height: 35rem;
+    }
+    .carousel-caption h2 {
+        position: relative;
+        top: 2rem;
+        font-size: 2.5rem;
+    }
+    .overlay {
+        height: 6rem;
+        position: relative;
+        top: -6rem;
+    }
+    #menu-lg{
+        display: inline-block;
+    }
+    #menu-lg a{
+        font-size: 2rem;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        left: 15rem;
+        bottom: 0.5rem;
+    }
+    #menu-lg-item{
+        margin-right: 2.5rem;
+    }
+    /*-----Box Info-----*/
+    .box-info {
+        position: relative;
+        bottom: 6rem;
+        border: 5px solid white;
+        border-bottom: 5px solid black;
+        border-right: 5px solid black;
+    }
+    .box-info h3 {
+        font-size: 2rem;
+        margin-left: 10rem;
+    }
+    .box-info a {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        width: 50%;
+    }
+    #hour{
+        display: inline-block;
+        position: relative;
+        bottom: 22.5rem;
+        left: 40rem;
+        width: 20rem;
+        text-align: center;
+    }
+    #hour h3{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    #hour p {
+        font-size: 1.5rem;
+    }
+    /*-----Start Table Vista-----*/
+    section.table-vista {
+        border: 4px solid black;
+        height: 12rem;
+        position: relative;
+        bottom: 16rem;
+    }
+    .table-title h2 {
+        color: goldenrod;
+        height: 4rem;
+        position: relative;
+        bottom: 1rem;
+        font-size: 3rem;
+        border: 4px solid black;
+    }
+    section a {
+        font-size: 2.5rem;
+        position: relative;
+        left: 10rem;
+        bottom: 0.5rem;
+        margin-right: 8rem;
+    }
+    /*Formulaire de Reservation*/
+    .container{
+        position: relative;
+        bottom: 8rem;
+        max-height: 30rem;
+    }
+    #card-img {
+        height: 30rem;
+    }
+    #reservation {
+        position: relative;
+        left: 2rem;
+        bottom: 12rem;
+        padding: 1rem 7rem;
+        font-size: 2rem;
+        border: 4px solid goldenrod;
+    }
+    .card-content h3 {
+        font-size: 3rem;
+    }
+    .card-content {
+        width: 95%;
+        height: 28rem;
+        position: relative;
+        bottom: 29rem;
+        left: 1rem;
+    }
+    .form-row select {
+        width: 26.8rem;
+        font-size: 2rem;
+        border: 4px solid white;
+        border-top: 4px solid goldenrod;
+        border-left: 4px solid goldenrod;
+        margin-top: 1rem;
+    }
+    .form-row input {
+        width: 26.8rem;
+        font-size: 2rem;
+        border: 4px solid white;
+        border-top: 4px solid goldenrod;
+        border-left: 4px solid goldenrod;
+        margin-top: 2rem;
+    }
+    .chef{
+        max-height: 25rem;
+    }
+    .chef-img img{
+        width: 60%;
+        height: 30rem;
+        position: relative;
+        bottom: 22rem;
+    }
+    .chef-info{
+        display: inline-block;
+        width: 35%;
+        position: relative;
+        bottom: 8rem;
+        left: 1rem;
+    }
+    .chef-info h5{
+        font-size: 2.5rem;
+    }
+    .chef-info p {
+        font-size: 1.5rem;
+    }
+    /*-----Footer-----*/
+    footer {
+        position: relative;
+        margin-top: 2rem;
+        height: 18rem;
+    }
+    .row{
+        position: relative;
+        top: 8rem;
+    }
+    #footer-text{
+        display: inline-block;
+        text-align: center;
+    }
+    #footer-text h6{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    #footer-text span i{
+        font-size: 0.5rem;
+        position: relative;
+        bottom: 0.3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    #col-1 p{
+        font-size: 1.5rem;
+        position: relative;
+        bottom: 1rem;
+    }
+    #col-1 i{
+        font-size: 1.5rem;
+    }
+    #col-2{
+       font-size: 3rem;
+    }
+    #col-3{
+       font-size: 1rem; 
+       position: relative;
+       bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    nav h1 a {
+        position: relative;
+        right: 80rem;
+        bottom: 0.1rem;
+        font-size: 4rem;
+    }
+    #menu-lg a{
+        position: relative;
+        left: 27rem;
+        bottom: 0.5rem;
+    }
+    .carousel-item img {
+        height: 41rem;
+    }
+    #hour{
+        display: inline-block;
+        position: relative;
+        bottom: 22.5rem;
+        left: 60rem;
+        width: 20rem;
+        text-align: center;
+    }
+    /*-----Start Table Vista-----*/
+    section.table-vista {
+        border: 4px solid black;
+        height: 12rem;
+        position: relative;
+        bottom: 12rem;
+        width: 60%;
+    }
+    section div.table-text{
+        display: inline-block;
+        width: 50%;
+        position: relative;
+        left: 56rem;
+        bottom: 11rem;
+    }
+    section div.table-text h3 {
+        font-size: 2.5rem;
+    }
+    section div.table-text p {
+        font-size: 2rem;
+    }
+    /*Formulaire de Reservation*/
+    #reservation {
+        position: relative;
+        bottom: 10rem;
+    }
+    .chef-img img{
+        position: relative;
+        bottom: 15rem;
+    }
+    
+}
