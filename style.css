@@ -166,7 +166,7 @@ section a {
 }
 section a:hover{
     color: white;
-    background: #000;
+    background: transparent;
 }
 section div.table-text{
     display: none;
@@ -801,6 +801,51 @@ footer {
     }
 }
 
+@media screen and (min-width: 1224px) {
+    nav h1 a {
+        right: 65rem;
+    }
+    .chef{
+        position: relative;
+        top: 8rem;
+    }
+    .chef-info{
+        position: relative;
+        bottom: 15rem;
+    }
+    /*Formulaire de Reservation*/
+    #reservation {
+        position: relative;
+        bottom: 10rem;
+        left: 2rem;
+        transition: left 1s;
+    }
+    #reservation:hover {
+        left: 4.5rem;
+        transition: left 1s;
+    }
+    #card-img {
+        height: 30rem;
+        width: 65%;
+        position: relative;
+        bottom: 1rem;
+    }
+    .card-content {
+        left: 0.8rem;
+        bottom: 30rem;
+        width: 43.8rem;
+    }
+    .card-content h3 {
+        font-size: 3rem;
+    }
+    .form-row select {
+        width: 21rem;
+    }
+    .form-row input {
+        width: 21rem;
+    }
+}
+
 @media screen and (min-width: 1440px) {
     nav h1 a {
         position: relative;
@@ -854,5 +899,10 @@ footer {
         position: relative;
         bottom: 15rem;
     }
-    
+    .form-row select {
+        width: 37.5rem;
+    }
+    .form-row input {
+        width: 37.5rem;
+    }
 }
